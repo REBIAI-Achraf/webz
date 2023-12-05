@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo1.png"/>
+
+    <!-- bootstrap links and scripts -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script> 
+       <!-- fontawesome -->
+       <script src="https://kit.fontawesome.com/3d79c5862c.js" crossorigin="anonymous"></script>
+
+       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  $(document).ready(function(){
+    $("a").on('click', function(event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 1800, function(){
+          window.location.hash = hash;
+        });
+      } 
+    });
+  });
+  </script>
+  <style>
+    *{
+      box-sizing: border-box;
+       padding: 0%;
+       margin: 0%;
+      
+   }
+
+body{
+
+ background:rgb(255, 243, 188)!important;
+}
+.header{
+background:rgb(255, 243, 188);height: 80vh;
+}
+.navbar{
+   padding-top: 20px !important;
+}
+.nav-item{
+   margin-left:20px ;
+}
+.fa-bars{
+   color: rgb(14, 12, 12);font-size: 30px !important;
+}
+.navbar-toggler{
+   border:none !important;outline: none!important;color: transparent;
+}
+.header li a{
+ font-size: 18px;
+ font-weight: 520;
+ border-bottom: 2px solid transparent;
+  
+}
+.header .nav-link:hover{
+border-bottom: 2px solid rgb(26, 26, 26);
+
+}
+
+.banner{
+   margin-top: 2%;
+   color:rgb(32, 32, 32);
+}
+p{
+ font-weight: 500;
+ font-size: 1.3em;
+}
+.petitp{
+ font-size: 1.1em;
+}
+
+.banner .row1{
+ margin-top: 60px !important;
+}
+h1{
+   font-size: 40px;
+}
+.banner img{
+   max-height:400px;
+   margin-left:30px;
+   width: 100%;
+   margin-top: 10px;
+   margin-bottom: 20px;
+   transition: .4s;
+}
+.banner img:hover{
+   scale: 1.1;
+   transition: .4s;
+}
+.btn{
+   padding: 12px;
+   margin: 10px;
+   width: 130px;
+   height: 50px;
+   display:inline-block ;
+   background:#1a1a1f!important;
+   text-decoration: none!important;
+   color: rgb(230, 229, 229)!important;
+   border:2px solid white !important;
+   border-radius: 10px !important;
+   text-align: center;
+   font-weight: bold !important;
+   font-size: 13px;
+   transition: .3s;
+}
+.btn2{
+ padding: 12px;
+ margin: 10px;
+ width: 130px;
+ display:inline-block ;
+ background:rgb(255, 243, 188)!important;;
+ text-decoration: none!important;
+ color: #1a1a1f;
+ border:2px solid #1a1a1f;
+ border-radius: 10px;
+ text-align: center;
+ font-weight: bold !important;;
+ font-size: 13px;
+ transition: .3s;
+}
+.btn:hover{
+   background-color:rgb(255, 243, 188)!important;;
+   color:#1a1a1f !important;;
+   border:2px solid #1a1a1f!important;;
+   transition: .3s;
+}
+.btn2:hover{
+
+ color:#1a1a1f;
+
+}
+
+
+/* small screen  *********************************************************88
+***************************************************************************************
+*****************************************************************************************88***8*/
+@media only screen and (max-width: 600px){
+ .header{
+   height: 85vh;
+ }
+   .banner img{
+   max-height:400px;
+   margin-left: 0px;
+   width: 100%;
+   border-radius: 25% 15%;
+   margin-top: 30px;
+   margin-bottom: 20px;
+}
+
+.row1{
+   padding-left: 30px;
+}
+.banner .row1 a{width:140px;}
+
+h2,.title,.title2 {
+ font-weight: 600;
+ font-size :1.3em !important;padding: 10px;
+}
+p{
+ font-size :.8em !important;
+}
+.part0,.part00{
+
+  border-radius: 30px 30px 0px 0px !important;
+}
+.part1{
+ position: relative;
+ width: 100%;
+ display: flex;
+ height: 150vh;
+ flex-direction: column;
+}
+.part1 img {
+ width: 90% !important;
+ height: 50% !important;
+}
+.box{
+ display:none !important;
+}
+.text-box{
+ width:100% !important;
+ height: 40% !important; 
+ margin-top: 20px;
+ padding: 10px;
+ text-align: center;
+}
+.part2{
+ padding-top: 50px;
+background-image: none !important;;
+ width: 100%;
+ height: 190vh!important; margin-bottom: 50px;
+
+}
+.solde{
+ margin-top: 20px;
+ background-image: url(img/logo1.png);
+ background-repeat: repeat !important;
+background-size: 100%  !important;
+ flex-direction: column!important;
+ height: 100%;
+ width: 100%;
+
+}
+.solde img {
+ width: 70% !important;
+ height: 80% !important;;
+
+}
+.part3{
+ position: relative;
+ width: 100%;
+ display: flex;
+ height: 150vh;
+ flex-direction: column-reverse;
+}
+.part3 img{
+ margin-left: 5%;
+ width: 90% !important;
+ height: 50% !important;
+}
+.box3{
+ display: none !important;
+}
+.text-box2{
+ margin:0%;
+ width:90% !important;
+ height: 50% !important; 
+ margin-top: 20px;
+ padding: 10px;
+ text-align: center;
+}
+.part4{
+ position: relative;
+ width: 100% ;
+ display: flex;
+ height: 140vh!important;
+ flex-direction: column !important;
+}
+.services-heading{
+ 
+ top:1% !important;
+ width: 70% !important;
+}
+.services{
+ position: relative;
+ top:-3% !important;
+ width: 100% !important;
+ display: flex;
+ height: 100% !important;
+ flex-direction: column !important;
+}
+.service{
+ margin: 10px;
+ width:80%!important;
+ height: 25% !important;
+ background: #1a1a1f!important;
+}
+.service p{
+ color: #fff !important;
+font-size: 1.1em !important;
+}
+.service img {
+
+ filter: invert(100%) drop-shadow(0 0 1px black);
+ transition:.5s
+}
+.part5{
+ position: relative;
+ width: 100% ;
+ display: flex;
+ height: 140vh!important;
+ flex-direction: column !important;
+}
+.Apropos{
+ height: 140vh!important;
+ flex-direction:column-reverse !important;
+}
+.Apropos video {
+ height: 70% !important;
+ width: 90% !important;border-radius: 30px!important;
+}
+.part6{
+ height: 110vh !important;
+}
+.part6 h2{
+margin-top: 20px;
+}
+
+.part6 img {
+ margin-top: 50px;
+}
+form {
+ margin-top:60px !important;
+ border-radius: 30px;
+ background-color: #1a1a1f;
+ display: flex;
+ height: 50%;
+ width: 90% !important;
+align-items:center;
+
+}
+}
+/**********************************************************************************************************
+*********************************************************************************/
+.part0{
+margin-left: auto;
+margin-right: auto;
+ background:#1a1a1f;
+ color: #fff;
+ position: relative;
+ display: flex;
+ padding: 10px;
+ flex-direction: column;
+ width: 90%;
+ height: 27vh;
+ align-items: center;
+ justify-content: center;text-align: center;
+ border-radius: 30px 30px 30px 0px;
+}
+.part00{
+ margin-left: auto;
+ margin-right: auto;
+  background:#1a1a1f;
+  color: #fff;
+  position: relative;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  width: 90%;
+  height: 27vh;
+  align-items: center;
+  justify-content: center;text-align: center;
+  border-radius: 30px 30px 0px 30px;
+}
+h2, .title {
+ font-weight: 600;
+ font-size :1.8em;padding: 10px;
+}
+.title2 {
+ font-weight: 600;
+ font-size :1.8em;
+ color:rgb(255, 243, 188);
+ text-shadow: 0 0 2px #000000;
+ margin-bottom:70px;
+}
+.part1,.part3{
+ position: relative;
+ width: 100%;
+ height: 70vh;
+ display: flex;
+}
+.part1 img {
+ margin-left:5%;
+ background:#1a1a1f;
+ height: 90%;
+ width: 40%;
+ border-radius:0px 0px 30px 30px;
+}
+.part3 img{
+ background:#1a1a1f;
+ height: 100%;
+ width: 40%;
+ border-radius:0px 0px 30px 30px;
+}
+
+.box{
+ z-index: 1000;
+ height: 40px;
+ width: 50px;
+ float: right;
+ background:#1a1a1f;
+}
+.box2{
+ z-index: 1000;
+ height: 40px;
+ width: 50px;
+ float: right; 
+  border-radius: 30px 0px 0px 0px;
+  background:rgb(255, 243, 188);
+}
+.box3{
+ z-index: 1000;
+ height: 40px;
+ width: 10%;
+ float: right;
+ background:#1a1a1f;
+}
+.box4{
+ z-index: 1000;
+ height: 40px;
+ width: 100%;
+ float: right; 
+  border-radius: 0px 30px 0px 0px;
+  background:rgb(255, 243, 188);
+}
+.text-box{
+ color:#1a1a1f;
+ display: flex;
+ flex-direction: column;
+ justify-content:center;
+ align-items: center;
+ width:40%;
+ height: 90%; 
+ text-align: center;
+}
+.text-box2{
+ margin-left:5%;
+ color:#1a1a1f;
+ display: flex;
+ flex-direction: column;
+ justify-content:center;
+ align-items: center;
+ width:40%;
+ height: 90%; 
+ text-align: center;
+}
+h3{
+    font-weight:600;
+}
+
+.part2{
+ background:rgb(255, 243, 188);
+ background-image: url(img/logo1.png);
+ background-size: 80%;
+ background-repeat: no-repeat;
+ background-position: center;
+ position: relative;
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+ height: 100vh;
+ align-items: center;
+ text-align: center;
+}
+.solde{  
+ align-items: center;
+ justify-content: center;
+ position: relative;
+ display: flex;
+ flex-direction: row;
+ width:100%;
+ height: 65%;
+}
+.solde img{
+ height:70%;
+ width:22%;
+ transition: 0.6s;
+}
+.solde img:hover{
+ cursor: pointer;
+ scale: 1.2; 
+ transition: 0.6s;
+}
+
+.part4{
+ margin-top: 50px;
+ position: relative;
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+ height: 100vh;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+}
+.services-heading{
+ color: #fff;
+ position: relative;
+ top: 6%;
+ background:#1a1a1f;
+ padding-bottom:20px ;
+ border-radius: 10px;
+ width: 30%;
+}
+.services{
+ margin-left:auto;
+ margin-right: auto;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+ border-radius: 30px;
+ width: 90%;
+ height: 80%;
+}
+.service { 
+ margin-left:auto;
+ margin-right: auto;
+ display: flex;
+ flex-direction:column;
+ align-items: center;
+ text-align: center;
+ padding: 20px;
+ background:rgb(255, 243, 188);
+ border-radius: 30px;
+ width: 25%;
+ height: 60%;
+ cursor: pointer;
+ border: 3px solid black;
+}
+.service  img {
+
+ margin-top: 10%;
+ width: 40%;
+ height: 40%;
+}
+
+.service p{
+ font-weight: 600;
+}
+
+.service:hover img,.service:hover p{
+ 
+ filter: invert(100%) drop-shadow(0 0 2px black);
+ transition:.4s
+
+}
+.service:hover{
+ background:#1a1a1f;
+ transition: 0.4s !important;
+}
+.part5{
+
+ margin-top: 50px;
+ position: relative;
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+ height: 90vh;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+}
+.Apropos{
+ display: flex;
+ flex-direction: row;
+ background:rgb(255, 243, 188);
+ height: 70%;
+ width: 100%;
+ align-items: center;
+ justify-content: center
+}
+.Apropos video {
+ height:100%;
+}
+.part5 img{
+ height:100px;
+}
+.part6{
+ margin-top: 150px;
+ position: relative;
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+ height: 100vh;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+}
+
+form {
+ margin-top:50px;
+ border-radius: 30px;
+ background-color: #1a1a1f;
+ display: flex;
+ height: 90%;
+ flex-direction: column;
+ width: 40%;
+align-items:center;
+
+}
+input {
+ color: #fff;
+ border:none;
+ outline: none;
+ border-bottom: wheat 2px solid;
+ background-color: transparent;
+ padding:10px;
+ height: 20%;
+ width: 80%;
+ margin: 10px;
+}
+textarea{
+ color: #fff;
+ border: none;
+ border-bottom: wheat 2px solid;
+ outline: none;
+ width: 80%;
+ margin: 10px;
+ background-color: transparent;
+ padding:10px;
+}
+.part7{
+ margin-top:200px;
+ background: #1a1a1f;
+ width: 100%;
+ height: 31vh;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+footer {
+ color: #cacaca;
+ text-align:center;
+ margin: 10px;
+}
+footer img{
+ margin:10px;
+}
+
+  </style>
+    <title>Webz</title>
+
+</head>
+<body>
+<section class="header">
+<div class="container">
+          <!-- nav -->
+        <nav class="navbar navbar-expand-lg bg-transparent">
+            <div class="container-fluid">
+              <a class="navbar-brand me" href="#"><img src="img/logo.png" height="50px"alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto text-end">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"> Acceuil </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#service">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#apropos"> À propos </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#contact">Nous contacter </a>
+                  </li>
+                  <li class="nav-item dropdown active">
+                    <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                           Shop
+                    </a>
+                    <ul class="dropdown-menu bg-light">
+                      <li><a class="dropdown-item" href="#"><img src="https://img.icons8.com/ios/20/000000/t-shirt--v1.png"/> &emsp; T-shirt</a></li>
+                      <li><a class="dropdown-item" href="#"><img src="https://img.icons8.com/external-others-pike-picture/28/000000/external-Sweatshirt-clothes-others-pike-picture-2.png"style="margin-left: -4px;"/>&emsp; Sweetshirt</a></li>
+                      <li ><a class="dropdown-item" href="#"><img src="https://img.icons8.com/external-those-icons-lineal-those-icons/22/000000/external-Cap-clothes-and-accessories-those-icons-lineal-those-icons-2.png"/>&emsp; Cassquettes</a></li>
+                      <li><a class="dropdown-item" href="#"><img src="https://img.icons8.com/external-photo3ideastudio-lineal-photo3ideastudio/20/000000/external-shirt-clothes-photo3ideastudio-lineal-photo3ideastudio.png"/>&emsp; Chemises</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#"> <i class="fa-solid fa-user"></i></a>
+                  </li>
+                </ul>
+                
+              </div>
+            </div>
+          </nav>
+          <div class="row banner">
+            <div class="col-md-5 mt-4 row1" data-aos="fade-right"  data-aos-duration="1300">
+              <h1> Bienvenu chez Webz !</h1>
+              <p>découvrer nos produit et notre qualité</p>
+              <a href="" class="btn">rejoindre</a>
+              <a href=""class="btn2">Explore plus</a>
+            </div>
+            <div class="col-md-6"text-center data-aos="fade-left"  data-aos-duration="1300">
+                <a href=""><img src="img/tshirts.png"alt="" class="img-fluid"></a>
+            </div>
+          </div>
+    </div>
+</section>
+
+<section class="part0">
+  <h2 class="title"> Trouvez le T-shirt brodé qui vous convients  </h2>
+<p class="petitp">consultez notre shop ! </p>
+</section>
+
+<section class="part1">
+<img src="img/img.png"/>
+<div class="box"><div class="box2"></div></div>
+<div class="text-box" data-aos="fade-left"  data-aos-duration="1300">
+  <h3>Consultez notre Shop</h3>
+  <p>Des vêtements d'anime brodés, où la mode rencontre la fantaisie. Découvrez l'élégance de l'univers animé
+  </p>
+  <a href="" class="btn"> <i class="fa-solid fa-shop"></i> </a>   
+</div>
+</section>
+
+<section class="part2">
+    <h2 class="title2">Profitez de <img src="img/off.png" height="60px"> de réductions  pour ces T-shirts !</h2>
+
+    <div class="solde">
+    
+      <img src="img/t1.png" alt="" srcset="" data-aos="fade-up"
+      data-aos-duration="900">
+      <img src="img/t2.png" alt="" srcset=""data-aos="fade-up"
+      data-aos-duration="1300">
+      <img src="img/t3.png" alt="" srcset=""data-aos="fade-up"
+      data-aos-duration="1700">
+      <img src="img/t4.png" alt="" srcset=""data-aos="fade-up"
+      data-aos-duration="2100">
+    </div>
+  
+</section>
+
+<section class="part00">
+  <h2 class="title"> Télécharger vos propre design pour votre T-shirt !  </h2>
+<p class="petitp">créer votre t-shirt à base de vos mangas préférés ! </p>
+</section>
+<section class="part3">
+ 
+  <div class="text-box2" data-aos="fade-right"  data-aos-duration="1300">
+    <h3>le dsign que vous voulez ! </h3>
+<p> Personnalisez votre t-shirt avec vos couleurs préférées et choisissez le design parfait en téléchargeant votre broderie préférée. Rendez chaque vêtement unique à votre image.
+</p>
+  
+    <a href="" class="btn2"> <i class="fa-solid fa-pen-to-square"></i></a>   
+  </div>
+  <div class="box3"><div class="box4"></div></div>
+   <img src="img/shirt.png"/>
+  </section>
+  
+ <section class="part4" id="service">
+      <h2 class="services-heading"> Nos Services</h2>
+    <div class="services">
+
+ <div class="service"data-aos="fade-up"
+ data-aos-duration="1300">
+   <p>Conception & design</p>
+ <img src="img/icon1.png">
+    </div>
+
+<div class="service "data-aos="fade-up"
+data-aos-duration="1300" >
+  <p>Broderie professionelle</p>
+  <img src="img/icon2.png">
+
+</div>
+<div class="service" data-aos="fade-up"
+data-aos-duration="1300"> 
+   <p>Meilleure Qualité </p>
+   <img src="img/icon3.png">
+
+</div>
+    </div>
+  </section> 
+
+<section class="part5" id="apropos">
+  <img src="img/logo.png">
+  <div class="Apropos">
+  <video autoplay  muted loop style="border-radius:30px" id="myVideo" data-aos="fade-up"
+  data-aos-duration="1300">
+    <source src="img/video.mp4" type="video/mp4" >
+</video> 
+<div class="text-box2"data-aos="fade-up"
+data-aos-duration="1300">
+  <h3>A propos de Nous ?</h3>
+<p> Chez Webz, nous transformons votre passion pour les anime en pièces uniques et stylisées. 
+  Notre équipe dévouée combine l'art de la broderie avec l'univers captivant des anime pour créer des t-shirts et des
+   hoodies personnalisés qui célèbrent votre individualité.
+    Plongez dans un monde où la créativité rencontre la qualité, et découvrez l'expression personnelle à travers nos vêtements brodés avec soin, 
+  conçus exclusivement pour les amateurs d'anime et de style unique
+</p>
+</div>
+<script>
+ 
+  var video = document.getElementById("myVideo");
+
+ 
+  video.addEventListener("ended", function() {
+    video.currentTime = 0; 
+    video.play();
+  });
+</script>
+
+</section>
+
+
+<section class="part6" id="contact">
+  <h2 style="margin-top:100px;margin-bottom:40px;">Contact </h2>
+
+  <img src="img/icon4.png" alt=""height="150px"data-aos="fade-up"
+  data-aos-duration="1300"/>
+  
+
+  <form action=""data-aos="fade-up"
+  data-aos-duration="1300">
+    <input type="text" value="" placeholder="Nom"/>
+    <input type="mail" value="" placeholder="Mail"/>
+    <input type="text" value=""placeholder="Numéro de téléphone"/>
+    <textarea name="" id="" cols="40" rows="6" placeholder="Message"></textarea><br>
+    <input class="btn2" type="submit" value="Envoyer"/>
+  </form>
+</section>
+
+
+<section class="part7">
+<footer>
+  <sub>+2135125126126</sub><br>
+  <sub>contact@webz.com</sub><br>
+  <sub>Tous droits réservés &copy; 2022-2023</sub><br>
+  <img src="img/logo.png" height="50px" style="filter: invert(70%);"/>
+  <br>
+  <sub>© Conçu et réalisé par Mr Achraf Rebiai - <a href="https://rebiai-achraf.github.io/portfolio">AR Développement </a> </sub>
+  <br>
+  <sub>Contactez-moi pour consulter le site complet !</sub>
+
+</footer>
+</section>
+
+
+</body>
+</html>
+<script>
+  AOS.init();
+</script>
